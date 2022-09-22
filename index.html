@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="/favicon-96x96.ico">
 <title>Git CheatSheet</title>
 </head>
-<li>
-    <ol>PS oder CMD öffnen</ol>
-    <ol>Auf Webseite in das Projekt gehen (Repository)</ol>
-    <ol>Dann der Clone Button drücken & Clone with SSH kopieren</ol>
-    <ol>Beispiel; cd ./Downloads/ eingeben</ol>
-    <ol>git clone + kopiertes eingeben und ausführen</ol>
-    <ol>Beispiel; cd ./Projektname eingeben</ol>
-    <ol>git add * eingeben (Entweder: * = Alle Datein, Oder: Dateiname)</ol>
-    <ol>git status (Grün = Es wurde geaddet, Rot = Es wurde nicht geaddet)</ol>
-    <ol>git commit -m &ldquo Kommentar &ldquo</ol>
-    <ol>git push</ol>
-</li>
+<h1>Tipps und Tricks</h1>
+<h2>Git Verbindung</h2>
+<ol>
+    <li>PS oder CMD öffnen</li>
+    <li>Auf Webseite in das Projekt gehen (Repository)</li>
+    <li>Dann der Clone Button drücken & Clone with SSH kopieren</li>
+    <li>Beispiel; cd ./Downloads/ eingeben</li>
+    <li>git clone + kopiertes eingeben und ausführen</li>
+    <li>Beispiel; cd ./Projektname eingeben</li>
+    <li>git add * eingeben (Entweder: * = Alle Datein, Oder: Dateiname)</li>
+    <li>git status (Grün = Es wurde geaddet, Rot = Es wurde nicht geaddet)</li>
+    <li>git commit -m &ldquo Kommentar &ldquo</li>
+    <li>git push</li>
+</ol>
 <p><strong>Tipp:</strong> Mit cd.. kommt man aus dem aktuellen Ordner raus; Z.B. von /Downloads/Test/ zu /Downloads/</p>
+<br>
+<h2>Branch</h2>
+<ul>
+    <li>git branch <em>--> Zeigt mit * an auf welchem Branch man sich befindet</em></li>
+    <li>git branch + Name <em>--> Erstellt ein neues Branch</em></li>
+    <li>git checkout + Name <em>--> Wechselt aktuellen Branch zu dem eingegebenen Branch</em></li>
+    <li>git push --set-upstream origin + Name <em>--> Pusht neues Branch</em></li>
+    <li>git merge + Name <em>--> Führt (mergt) eingegebenes Branch zum aktuellen Branch zusammen, also man holt sich die Datein aus dem angegebenem Branch</em></li>
+    <li>git branch -d + Name <em>--> Löscht den angegebenen Branch</em></li>
+</ul>
 <body>
 </body>
 </html>
